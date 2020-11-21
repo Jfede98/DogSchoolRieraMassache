@@ -53,6 +53,16 @@ public List<Perro>consultarPerro (String raza){
     return perros.stream().filter(e->e.getDueno().equals(raza)).collect(Collectors.toList());
        
 }
+public double precioInscrip(Perro p){
+    if(p.getRaza().equals("Pitbull")){
+        return 50.50;
+    }else if(p.getRaza().equals("Doberman")){
+        return 75.75;
+        
+    }else{
+        return 35.20;
+    }
+}
 
 
 }
